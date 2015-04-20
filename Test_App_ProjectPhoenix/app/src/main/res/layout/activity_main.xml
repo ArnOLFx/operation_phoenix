@@ -1,0 +1,209 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="@string/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+<!--    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter the ip of the telemetry server: "
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"/>     -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Data"
+        android:id="@+id/button"
+        android:layout_marginEnd="55dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:onClick="open"
+        android:nestedScrollingEnabled="false" />
+
+
+
+    <EditText
+        android:id="@+id/truckSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignBottom="@+id/avgFuel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="29dp" />
+    <EditText
+        android:id="@+id/avgFuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignBottom="@+id/engineRpm"
+        android:layout_alignStart="@+id/truckSpeed"
+        android:layout_marginBottom="27dp" />
+    <EditText
+        android:id="@+id/engineRpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignBottom="@+id/gameBrake"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="27dp" />
+    <EditText
+        android:id="@+id/gameBrake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignBottom="@+id/fuelWarning"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="28dp" />
+    <EditText
+        android:id="@+id/fuelWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/gameBrake" />
+    <EditText
+        android:id="@+id/engineDmg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:layout_below="@+id/engineRpm"
+        android:layout_alignStart="@+id/fuelWarning" />
+    <EditText
+        android:id="@+id/transmissionDmg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/engineDmg"
+        android:layout_alignStart="@+id/engineDmg" />
+    <EditText
+        android:id="@+id/cabinDmg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/transmissionDmg"
+        android:layout_alignStart="@+id/transmissionDmg" />
+    <EditText
+        android:id="@+id/chassiDmg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/cabinDmg"
+        android:layout_alignStart="@+id/cabinDmg" />
+    <EditText
+        android:id="@+id/wheelDmg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/chassiDmg"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:id="@+id/trailerDmg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/wheelDmg"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed:"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/avgFuel"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avg. Fuel-Cons.:"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/engineRpm"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RPM:"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/truckSpeed"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brake:"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/avgFuel"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel Low:"
+        android:id="@+id/textView6"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Engine Dmg:"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/fuelWarning"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transmission Dmg:"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/engineDmg"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cabin Dmg:"
+        android:id="@+id/textView9"
+        android:layout_alignTop="@+id/cabinDmg"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chassi Dmg:"
+        android:id="@+id/textView10"
+        android:layout_alignTop="@+id/chassiDmg"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wheel Dmg:"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/chassiDmg"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trailer Dmg:"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/wheelDmg"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
