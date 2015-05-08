@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ETS2_AGA</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sign_up">sign_up</string>
+    <string name="title_activity_log_in">log_in</string>
+    <string name="title_activity_user_profile_screen">user_profile_screen</string>
+    <string name="title_activity_result_screen">result_screen</string>
+    <string name="title_activity_call_screen">call_screen</string>
+    <string name="title_activity_options_screen">options_screen</string>
+    <string name="title_activity_start_journey">start_journey</string>
+</resources>

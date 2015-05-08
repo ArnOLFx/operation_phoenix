@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context="com.example.eyjobro.ets2_aga.start_journey"
+android:background="@mipmap/background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:id="@+id/linearLayout2">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/happy"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:src="@mipmap/smile" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+            android:layout_gravity="bottom">
+
+            <ImageButton
+                android:layout_width="128dp"
+                android:layout_height="76dp"
+                android:id="@+id/phonecall"
+                android:src="@mipmap/nhchsggdskyd"
+                android:background="#00000000"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/linearLayout2"
+                android:layout_toEndOf="@+id/linearLayout2"
+                android:baselineAlignBottom="false"
+                android:layout_gravity="center|bottom"
+                android:onClick="openCallScreen"/>
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="76dp"
+                android:id="@+id/imageButton"
+                android:background="#00000000"
+                android:src="@mipmap/stop1"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center_vertical|bottom"
+                android:paddingLeft="80dp"
+                android:onClick="openResult"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
